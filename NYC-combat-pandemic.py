@@ -5,6 +5,31 @@ import requests
 from bs4 import BeautifulSoup
 import time
 
+def get_nyc_neighborhoods():
+	with open('newyork_data.json') as json_data:
+		newyork_data = json.load(json_data)
+	neighborhoods_data = newyork_data['features']
+
+	# instantiate a dataframe
+	neighborhoods = pd.DataFrame(columns = ['Borough', 'Neighborhood', 'Latitude', 'Longitude'])
+	for data in neighborhoods_data:
+    borough = data['properties']['borough'] 
+    neighborhood_name = data['properties']['name']
+        
+    neighborhood_lat = data['geometry']['coordinates'][1]
+    neighborhood_lon = data['geometry']['coordinates'][0]
+    
+    neighborhoods = neighborhoods.append({'Borough': borough,
+                                          'Neighborhood': neighborhood_name,
+                                          'Latitude': neighborhood_lat,
+                                          'Longitude': neighborhood_lon}, ignore_index=True)
+
+    print('The dataframe has {} boroughs and {} neighborhoods.'.format(
+        len(neighborhoods['Borough'].unique()),
+        neighborhoods.shape[0]
+        )
+    )
+    return neighborhoods
 
 
 def get_hospital_beds():
@@ -65,4 +90,5 @@ def get_hospital_beds():
 	df.index.rename('Hospital', inplace = True)
 	final_df = df[['Intensive Care Beds', 'Medical / Surgical Beds', 'Total Beds']].reset_index() 
 
+	return final_df
 	df.to_csv('hospital_beds_.csv')
