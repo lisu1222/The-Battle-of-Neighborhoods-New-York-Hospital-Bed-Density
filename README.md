@@ -5,7 +5,7 @@
 Are the hospitals near me ready for Coronavirus?              
 Until April 25th, the confirmed COVID-19 cases in New York City have reached 150,000 and the confirmed deaths 10,961. New York City State now has more COVID-19 cases than any single coutry outside the US, according to latest figures.      
 
-This project was motivated by the current national battle to beat the pandemic. It aims to analyze the hospital bed density for each neighborhood in the five boroughs of New York City.     
+This project was motivated by the current national battle to beat pandemic. It aims to analyze the hospital bed density for each neighborhood in the five boroughs of New York City.     
 Hospital Bed Density provides the number of hospital beds per 1,000 people; It serves as a general measure of inpatient service availability, especially in  the battles to beat pandemic. Hospital beds include inpatient beds available in public, private, general, and specialized hospitals and rehabilitatiion centers. Because the level of inpatient services required depends on several factors - such as demographic issues and the burden of disease - there is no global target for the number of hospital beds percountry. In United States, the hospital bed density is measured as 2.9 beds per 1,000 people.        
 
 
@@ -19,4 +19,22 @@ Hospital Bed Density provides the number of hospital beds per 1,000 people; It s
 3. [NYC Population Data](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/new_york_data.csv) includes population data per neighborhood that were scrapped from Wikipedia, and then integrated with [New York Neiborhood Data](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/newyork_data.json)). It has 5 fileds: Borough, Neighborhood, Population, Longitude and Latitude.
 
 
+## Project Plan
 
+This project will include the following steps:
+    
+- Collect and clean New York Hospital Data
+- Collect and clean New York Neighborhood Data
+- Collect and clean New York Population Data
+- Integrate datasets on interest of study
+- Statistical Analysis and Visulization
+- K-Means Neighborhood Clustering Analysis on Hospital Beds Density 
+- Visulize the Neighborhood Clusters 
+- Analyze Results
+
+
+## Method
+
+## Result and Discussion
+
+## Conclusion
