@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_470386c478b6407b8c39aa529a958985 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_470386c478b6407b8c39aa529a958985" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_470386c478b6407b8c39aa529a958985 = L.map(
+                                  'map_470386c478b6407b8c39aa529a958985',
+                                  {center: [40.7127281,-74.0060152],
+                                  zoom: 11,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_4e6916cb6edf477980513b6da6f70a5e = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+        
+    
+            var circle_marker_95590b188e5d4ef9b18cb9e28dbc88d3 = L.circleMarker(
+                [40.87655077879964,-73.91065965862981],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_5449bf57428840d480c9febaff70bbaa = L.popup({maxWidth: '300'});
+
+            
+                var html_ef07aebf8e314fc680087555f7dd5650 = $('<div id="html_ef07aebf8e314fc680087555f7dd5650" style="width: 100.0%; height: 100.0%;"> Cluster 3: Manhattan-Marble Hill: 0.127</div>')[0];
+                popup_5449bf57428840d480c9febaff70bbaa.setContent(html_ef07aebf8e314fc680087555f7dd5650);
+            
+
+            circle_marker_95590b188e5d4ef9b18cb9e28dbc88d3.bindPopup(popup_5449bf57428840d480c9febaff70bbaa);
+
+            
+        
+    
+            var circle_marker_0e3b6afcd4294db1a537fd222957c64d = L.circleMarker(
+                [40.898272612138044,-73.86731496814177],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_6d63b9c2db0b4e01b4cc0bcc3ac26901 = L.popup({maxWidth: '300'});
+
+            
+                var html_9d3258d5d00b4f36a2e29b0837db16d5 = $('<div id="html_9d3258d5d00b4f36a2e29b0837db16d5" style="width: 100.0%; height: 100.0%;"> Cluster 3: Bronx-Woodlawn: 0.038</div>')[0];
+                popup_6d63b9c2db0b4e01b4cc0bcc3ac26901.setContent(html_9d3258d5d00b4f36a2e29b0837db16d5);
+            
+
+            circle_marker_0e3b6afcd4294db1a537fd222957c64d.bindPopup(popup_6d63b9c2db0b4e01b4cc0bcc3ac26901);
+
+            
+        
+    
+            var circle_marker_40f45a3df24e433fb35e8b3002357847 = L.circleMarker(
+                [40.87722415599446,-73.8793907395681],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_ff33317c2ae94acc80797a38a1f0e867 = L.popup({maxWidth: '300'});
+
+            
+                var html_6be7bde8f5064d0faa0e117624217c67 = $('<div id="html_6be7bde8f5064d0faa0e117624217c67" style="width: 100.0%; height: 100.0%;"> Cluster 3: Bronx-Norwood: 0.198</div>')[0];
+                popup_ff33317c2ae94acc80797a38a1f0e867.setContent(html_6be7bde8f5064d0faa0e117624217c67);
+            
+
+            circle_marker_40f45a3df24e433fb35e8b3002357847.bindPopup(popup_ff33317c2ae94acc80797a38a1f0e867);
+
+            
+        
+    
+            var circle_marker_9fd9029846f5401694ee1dd0d4b07a8f = L.circleMarker(
+                [40.857413498088654,-73.85475564017999],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_d0f7f82a40c1472986a47a52dff269f6 = L.popup({maxWidth: '300'});
+
+            
+                var html_10a43cb947154c6799781ccafc403075 = $('<div id="html_10a43cb947154c6799781ccafc403075" style="width: 100.0%; height: 100.0%;"> Cluster 3: Bronx-Pelham Parkway: 0.073</div>')[0];
+                popup_d0f7f82a40c1472986a47a52dff269f6.setContent(html_10a43cb947154c6799781ccafc403075);
+            
+
+            circle_marker_9fd9029846f5401694ee1dd0d4b07a8f.bindPopup(popup_d0f7f82a40c1472986a47a52dff269f6);
+
+            
+        
+    
+            var circle_marker_a757aebd3fda4fac9f45561009228623 = L.circleMarker(
+                [40.847897926062714,-73.91967159119567],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_d0f38b22ebb9471da53eceba11abba4b = L.popup({maxWidth: '300'});
+
+            
+                var html_5fe69b3b9cd941a69cd5d936ac2c67ed = $('<div id="html_5fe69b3b9cd941a69cd5d936ac2c67ed" style="width: 100.0%; height: 100.0%;"> Cluster 3: Bronx-Morris Heights: 0.076</div>')[0];
+                popup_d0f38b22ebb9471da53eceba11abba4b.setContent(html_5fe69b3b9cd941a69cd5d936ac2c67ed);
+            
+
+            circle_marker_a757aebd3fda4fac9f45561009228623.bindPopup(popup_d0f38b22ebb9471da53eceba11abba4b);
+
+            
+        
+    
+            var circle_marker_963eefcfa56842cb9f562d1d4635c7b1 = L.circleMarker(
+                [40.86099679638654,-73.89642655981623],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_322e0ebf7607466ca918fc2fbecdcf71 = L.popup({maxWidth: '300'});
+
+            
+                var html_c3d13ced637547f2ae6bc4f36b7703f1 = $('<div id="html_c3d13ced637547f2ae6bc4f36b7703f1" style="width: 100.0%; height: 100.0%;"> Cluster 3: Bronx-Fordham: 0.161</div>')[0];
+                popup_322e0ebf7607466ca918fc2fbecdcf71.setContent(html_c3d13ced637547f2ae6bc4f36b7703f1);
+            
+
+            circle_marker_963eefcfa56842cb9f562d1d4635c7b1.bindPopup(popup_322e0ebf7607466ca918fc2fbecdcf71);
+
+            
+        
+    
+            var circle_marker_779bde7c5e3a46a09d802cf79aed812e = L.circleMarker(
+                [40.84269615786053,-73.88735617532338],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_96ab9395e0474dc2a9e500d5f7b107ba = L.popup({maxWidth: '300'});
+
+            
+                var html_0b5de8f0a9c546f9b4ea2c5c1517e5ff = $('<div id="html_0b5de8f0a9c546f9b4ea2c5c1517e5ff" style="width: 100.0%; height: 100.0%;"> Cluster 3: Bronx-East Tremont: 0.032</div>')[0];
+                popup_96ab9395e0474dc2a9e500d5f7b107ba.setContent(html_0b5de8f0a9c546f9b4ea2c5c1517e5ff);
+            
+
+            circle_marker_779bde7c5e3a46a09d802cf79aed812e.bindPopup(popup_96ab9395e0474dc2a9e500d5f7b107ba);
+
+            
+        
+    
+            var circle_marker_0939711c6cf14c62bf84e2d7551cc0ab = L.circleMarker(
+                [40.819754370594936,-73.90942160757436],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_a66d3bbca6604d68ba36a46e3900ae3c = L.popup({maxWidth: '300'});
+
+            
+                var html_8eabef7672ab4a03aa07b7e769f637c0 = $('<div id="html_8eabef7672ab4a03aa07b7e769f637c0" style="width: 100.0%; height: 100.0%;"> Cluster 0: Bronx-Melrose: 0.237</div>')[0];
+                popup_a66d3bbca6604d68ba36a46e3900ae3c.setContent(html_8eabef7672ab4a03aa07b7e769f637c0);
+            
+
+            circle_marker_0939711c6cf14c62bf84e2d7551cc0ab.bindPopup(popup_a66d3bbca6604d68ba36a46e3900ae3c);
+
+            
+        
+    
+            var circle_marker_ed50b24e0b4f45fe824a5bbc3de522a5 = L.circleMarker(
+                [40.823591985855344,-73.90150648943059],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_b86bf143c73542a1b6d1d57f253d29c1 = L.popup({maxWidth: '300'});
+
+            
+                var html_c57cafe3ecc247e89aec35664f7f900a = $('<div id="html_c57cafe3ecc247e89aec35664f7f900a" style="width: 100.0%; height: 100.0%;"> Cluster 0: Bronx-Morrisania: 0.154</div>')[0];
+                popup_b86bf143c73542a1b6d1d57f253d29c1.setContent(html_c57cafe3ecc247e89aec35664f7f900a);
+            
+
+            circle_marker_ed50b24e0b4f45fe824a5bbc3de522a5.bindPopup(popup_b86bf143c73542a1b6d1d57f253d29c1);
+
+            
+        
+    
+            var circle_marker_304b5193593f433d8f7098fe427cb114 = L.circleMarker(
+                [40.85064140940335,-73.8320737824047],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_2930a94f411f420da426a22e8e37f49d = L.popup({maxWidth: '300'});
+
+            
+                var html_b76d4633e11a4ab8a87de9994c4d5f95 = $('<div id="html_b76d4633e11a4ab8a87de9994c4d5f95" style="width: 100.0%; height: 100.0%;"> Cluster 3: Bronx-Pelham Bay: 0.0</div>')[0];
+                popup_2930a94f411f420da426a22e8e37f49d.setContent(html_b76d4633e11a4ab8a87de9994c4d5f95);
+            
+
+            circle_marker_304b5193593f433d8f7098fe427cb114.bindPopup(popup_2930a94f411f420da426a22e8e37f49d);
+
+            
+        
+    
+            var circle_marker_389fe31af5b6467fa1cc4b783f8f2921 = L.circleMarker(
+                [40.61100890202044,-73.99517998380729],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_dbf0ac6aea0349fd805b701e3007d558 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a5b93b2bf8e496b9b43e178572edceb = $('<div id="html_1a5b93b2bf8e496b9b43e178572edceb" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Bensonhurst: 0.005</div>')[0];
+                popup_dbf0ac6aea0349fd805b701e3007d558.setContent(html_1a5b93b2bf8e496b9b43e178572edceb);
+            
+
+            circle_marker_389fe31af5b6467fa1cc4b783f8f2921.bindPopup(popup_dbf0ac6aea0349fd805b701e3007d558);
+
+            
+        
+    
+            var circle_marker_bebbff03fb0c4fc79871974851e4ee35 = L.circleMarker(
+                [40.61100890202044,-73.99517998380729],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_9e18c441aaf848a5b57393a15299bc3d = L.popup({maxWidth: '300'});
+
+            
+                var html_2a47d71591b843d9b0f0ad8e331d0dcb = $('<div id="html_2a47d71591b843d9b0f0ad8e331d0dcb" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Bensonhurst: 0.005</div>')[0];
+                popup_9e18c441aaf848a5b57393a15299bc3d.setContent(html_2a47d71591b843d9b0f0ad8e331d0dcb);
+            
+
+            circle_marker_bebbff03fb0c4fc79871974851e4ee35.bindPopup(popup_9e18c441aaf848a5b57393a15299bc3d);
+
+            
+        
+    
+            var circle_marker_787a2106601e499b89eecb7e0b141cc3 = L.circleMarker(
+                [40.64510294925429,-74.01031618527784],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_c8039d3ea83e4c699aa6c4b6bccb5fc8 = L.popup({maxWidth: '300'});
+
+            
+                var html_23bf215966034b2bbd64f1cfcbef24f8 = $('<div id="html_23bf215966034b2bbd64f1cfcbef24f8" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Sunset Park: 0.019</div>')[0];
+                popup_c8039d3ea83e4c699aa6c4b6bccb5fc8.setContent(html_23bf215966034b2bbd64f1cfcbef24f8);
+            
+
+            circle_marker_787a2106601e499b89eecb7e0b141cc3.bindPopup(popup_c8039d3ea83e4c699aa6c4b6bccb5fc8);
+
+            
+        
+    
+            var circle_marker_304c1f201ca641678ccc076f636679cd = L.circleMarker(
+                [40.59526001306593,-73.97347087708445],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_95372a9bf1cc48e09042409f72a938bb = L.popup({maxWidth: '300'});
+
+            
+                var html_d3d49b2ce60640b69976d13af5606381 = $('<div id="html_d3d49b2ce60640b69976d13af5606381" style="width: 100.0%; height: 100.0%;"> Cluster 3: Brooklyn-Gravesend: 0.075</div>')[0];
+                popup_95372a9bf1cc48e09042409f72a938bb.setContent(html_d3d49b2ce60640b69976d13af5606381);
+            
+
+            circle_marker_304c1f201ca641678ccc076f636679cd.bindPopup(popup_95372a9bf1cc48e09042409f72a938bb);
+
+            
+        
+    
+            var circle_marker_4b43524a313341e7a0884046efb71c1b = L.circleMarker(
+                [40.59526001306593,-73.97347087708445],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_b8703384ee584a03b848ce9180e6adc7 = L.popup({maxWidth: '300'});
+
+            
+                var html_1f0ce33cc500401d98f275b65e880c4e = $('<div id="html_1f0ce33cc500401d98f275b65e880c4e" style="width: 100.0%; height: 100.0%;"> Cluster 3: Brooklyn-Gravesend: 0.075</div>')[0];
+                popup_b8703384ee584a03b848ce9180e6adc7.setContent(html_1f0ce33cc500401d98f275b65e880c4e);
+            
+
+            circle_marker_4b43524a313341e7a0884046efb71c1b.bindPopup(popup_b8703384ee584a03b848ce9180e6adc7);
+
+            
+        
+    
+            var circle_marker_8338d20eca25405faf925a4f50777692 = L.circleMarker(
+                [40.57682506566604,-73.96509448785335],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_71089eac9d76480f97435312c89eea43 = L.popup({maxWidth: '300'});
+
+            
+                var html_6f656f50c51d43768627ca748154fa76 = $('<div id="html_6f656f50c51d43768627ca748154fa76" style="width: 100.0%; height: 100.0%;"> Cluster 3: Brooklyn-Brighton Beach: 0.048</div>')[0];
+                popup_71089eac9d76480f97435312c89eea43.setContent(html_6f656f50c51d43768627ca748154fa76);
+            
+
+            circle_marker_8338d20eca25405faf925a4f50777692.bindPopup(popup_71089eac9d76480f97435312c89eea43);
+
+            
+        
+    
+            var circle_marker_68b23b2df9f14610aa7ad11b3ed0fd0e = L.circleMarker(
+                [40.67082917695294,-73.94329119073582],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_9829fb6d6e6e4f68a82521e752d8779b = L.popup({maxWidth: '300'});
+
+            
+                var html_8b0436d7d50740399e836fbb298ff80a = $('<div id="html_8b0436d7d50740399e836fbb298ff80a" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Crown Heights: 0.009</div>')[0];
+                popup_9829fb6d6e6e4f68a82521e752d8779b.setContent(html_8b0436d7d50740399e836fbb298ff80a);
+            
+
+            circle_marker_68b23b2df9f14610aa7ad11b3ed0fd0e.bindPopup(popup_9829fb6d6e6e4f68a82521e752d8779b);
+
+            
+        
+    
+            var circle_marker_7ab1baf3dac144c189a1dfe8493993c9 = L.circleMarker(
+                [40.67082917695294,-73.94329119073582],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_81f3791744ef4997b3c43b56da16a572 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2e3b2f4c34a45f79e64f155ad3ecfaa = $('<div id="html_d2e3b2f4c34a45f79e64f155ad3ecfaa" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Crown Heights: 0.009</div>')[0];
+                popup_81f3791744ef4997b3c43b56da16a572.setContent(html_d2e3b2f4c34a45f79e64f155ad3ecfaa);
+            
+
+            circle_marker_7ab1baf3dac144c189a1dfe8493993c9.bindPopup(popup_81f3791744ef4997b3c43b56da16a572);
+
+            
+        
+    
+            var circle_marker_348dbfd0b71c482982da4c43f4d918b8 = L.circleMarker(
+                [40.65694583575104,-73.98007340430172],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_206b54a4e39849c9a03025f7d501ee75 = L.popup({maxWidth: '300'});
+
+            
+                var html_5964f1085d8141bf9777ec80ad77306c = $('<div id="html_5964f1085d8141bf9777ec80ad77306c" style="width: 100.0%; height: 100.0%;"> Cluster 0: Brooklyn-Windsor Terrace: 0.191</div>')[0];
+                popup_206b54a4e39849c9a03025f7d501ee75.setContent(html_5964f1085d8141bf9777ec80ad77306c);
+            
+
+            circle_marker_348dbfd0b71c482982da4c43f4d918b8.bindPopup(popup_206b54a4e39849c9a03025f7d501ee75);
+
+            
+        
+    
+            var circle_marker_a2166c80cf014b1aaf178b9d2d9a8beb = L.circleMarker(
+                [40.67682226225472,-73.9648592426269],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_fa066aee5b924775bdafdc094439f96c = L.popup({maxWidth: '300'});
+
+            
+                var html_f1dad5a6223f46f3b5eaa01cbd7a01fd = $('<div id="html_f1dad5a6223f46f3b5eaa01cbd7a01fd" style="width: 100.0%; height: 100.0%;"> Cluster 3: Brooklyn-Prospect Heights: 0.012</div>')[0];
+                popup_fa066aee5b924775bdafdc094439f96c.setContent(html_f1dad5a6223f46f3b5eaa01cbd7a01fd);
+            
+
+            circle_marker_a2166c80cf014b1aaf178b9d2d9a8beb.bindPopup(popup_fa066aee5b924775bdafdc094439f96c);
+
+            
+        
+    
+            var circle_marker_6cd917ca4cc74cc5ab78fa8dd4d99723 = L.circleMarker(
+                [40.66394994339755,-73.91023536176606],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_778edb2fa59844edaae525f0e315165b = L.popup({maxWidth: '300'});
+
+            
+                var html_73293c2bf5974cbba71f16b96428fd70 = $('<div id="html_73293c2bf5974cbba71f16b96428fd70" style="width: 100.0%; height: 100.0%;"> Cluster 3: Brooklyn-Brownsville: 0.045</div>')[0];
+                popup_778edb2fa59844edaae525f0e315165b.setContent(html_73293c2bf5974cbba71f16b96428fd70);
+            
+
+            circle_marker_6cd917ca4cc74cc5ab78fa8dd4d99723.bindPopup(popup_778edb2fa59844edaae525f0e315165b);
+
+            
+        
+    
+            var circle_marker_68c6cedec0f746d685ee663b0e49dff0 = L.circleMarker(
+                [40.707144393442505,-73.95811529220926],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_7b525d0b1b39414cb208654b1540a2fc = L.popup({maxWidth: '300'});
+
+            
+                var html_337e15f32475424ea33db5932cb31d34 = $('<div id="html_337e15f32475424ea33db5932cb31d34" style="width: 100.0%; height: 100.0%;"> Cluster 3: Brooklyn-Williamsburg: 0.0</div>')[0];
+                popup_7b525d0b1b39414cb208654b1540a2fc.setContent(html_337e15f32475424ea33db5932cb31d34);
+            
+
+            circle_marker_68c6cedec0f746d685ee663b0e49dff0.bindPopup(popup_7b525d0b1b39414cb208654b1540a2fc);
+
+            
+        
+    
+            var circle_marker_2f5fbc1973b641ad8be1229db646d8bb = L.circleMarker(
+                [40.69811611017901,-73.92525797487045],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_18d9ff0c702144a9bbf519d88d64411a = L.popup({maxWidth: '300'});
+
+            
+                var html_815123bead974eec81853a230a3fea7e = $('<div id="html_815123bead974eec81853a230a3fea7e" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Bushwick: 0.012</div>')[0];
+                popup_18d9ff0c702144a9bbf519d88d64411a.setContent(html_815123bead974eec81853a230a3fea7e);
+            
+
+            circle_marker_2f5fbc1973b641ad8be1229db646d8bb.bindPopup(popup_18d9ff0c702144a9bbf519d88d64411a);
+
+            
+        
+    
+            var circle_marker_d679b5816f4c4837bd82bfa12e71fb7c = L.circleMarker(
+                [40.68054023107649,-73.99465372828006],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_09239ad87257408e9b3512ebb743e406 = L.popup({maxWidth: '300'});
+
+            
+                var html_e70d478bfb4245f791027e9a66c5b869 = $('<div id="html_e70d478bfb4245f791027e9a66c5b869" style="width: 100.0%; height: 100.0%;"> Cluster 0: Brooklyn-Carroll Gardens: 0.226</div>')[0];
+                popup_09239ad87257408e9b3512ebb743e406.setContent(html_e70d478bfb4245f791027e9a66c5b869);
+            
+
+            circle_marker_d679b5816f4c4837bd82bfa12e71fb7c.bindPopup(popup_09239ad87257408e9b3512ebb743e406);
+
+            
+        
+    
+            var circle_marker_6b2618a4ad9d41e8819ebbf708fe1faf = L.circleMarker(
+                [40.68852726018977,-73.97290574369092],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_466d71eebd784080b88794b7a76dceec = L.popup({maxWidth: '300'});
+
+            
+                var html_7eca599bd5d64eb986ca455865d35cec = $('<div id="html_7eca599bd5d64eb986ca455865d35cec" style="width: 100.0%; height: 100.0%;"> Cluster 3: Brooklyn-Fort Greene: 0.109</div>')[0];
+                popup_466d71eebd784080b88794b7a76dceec.setContent(html_7eca599bd5d64eb986ca455865d35cec);
+            
+
+            circle_marker_6b2618a4ad9d41e8819ebbf708fe1faf.bindPopup(popup_466d71eebd784080b88794b7a76dceec);
+
+            
+        
+    
+            var circle_marker_66c2918ab7e74cb49d77d2f58551a5c3 = L.circleMarker(
+                [40.633130512758015,-73.99049823044811],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_4ad8eca34f0546c8a400334b4344b490 = L.popup({maxWidth: '300'});
+
+            
+                var html_7ceffe52c20c4f839adea74b8184340d = $('<div id="html_7ceffe52c20c4f839adea74b8184340d" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Borough Park: 0.038</div>')[0];
+                popup_4ad8eca34f0546c8a400334b4344b490.setContent(html_7ceffe52c20c4f839adea74b8184340d);
+            
+
+            circle_marker_66c2918ab7e74cb49d77d2f58551a5c3.bindPopup(popup_4ad8eca34f0546c8a400334b4344b490);
+
+            
+        
+    
+            var circle_marker_6279908e2f304c3ca26273f72cc8f03d = L.circleMarker(
+                [40.65842001746981,-73.95489867077713],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_17d4da33dc1540e49ef10d73b82f70b3 = L.popup({maxWidth: '300'});
+
+            
+                var html_35155b4ac9df4091a99fc184c01ec82f = $('<div id="html_35155b4ac9df4091a99fc184c01ec82f" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Prospect Lefferts Gardens: 0.027</div>')[0];
+                popup_17d4da33dc1540e49ef10d73b82f70b3.setContent(html_35155b4ac9df4091a99fc184c01ec82f);
+            
+
+            circle_marker_6279908e2f304c3ca26273f72cc8f03d.bindPopup(popup_17d4da33dc1540e49ef10d73b82f70b3);
+
+            
+        
+    
+            var circle_marker_db1142948e0c4b1383e582ee37d9e993 = L.circleMarker(
+                [40.71561842231432,-73.99427936255978],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_bd14d006443e4835b6aab339af6d74cd = L.popup({maxWidth: '300'});
+
+            
+                var html_d81badc35a4a41be848f5a9f743f165d = $('<div id="html_d81badc35a4a41be848f5a9f743f165d" style="width: 100.0%; height: 100.0%;"> Cluster 3: Manhattan-Chinatown: 0.027</div>')[0];
+                popup_bd14d006443e4835b6aab339af6d74cd.setContent(html_d81badc35a4a41be848f5a9f743f165d);
+            
+
+            circle_marker_db1142948e0c4b1383e582ee37d9e993.bindPopup(popup_bd14d006443e4835b6aab339af6d74cd);
+
+            
+        
+    
+            var circle_marker_1a7b7eb3ff724e2495343480ead6be71 = L.circleMarker(
+                [40.71561842231432,-73.99427936255978],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_51c24e5280034f02864b20a2e3466baa = L.popup({maxWidth: '300'});
+
+            
+                var html_3a18a6c01b3940b0982bd8b12115a6d8 = $('<div id="html_3a18a6c01b3940b0982bd8b12115a6d8" style="width: 100.0%; height: 100.0%;"> Cluster 3: Manhattan-Chinatown: 0.027</div>')[0];
+                popup_51c24e5280034f02864b20a2e3466baa.setContent(html_3a18a6c01b3940b0982bd8b12115a6d8);
+            
+
+            circle_marker_1a7b7eb3ff724e2495343480ead6be71.bindPopup(popup_51c24e5280034f02864b20a2e3466baa);
+
+            
+        
+    
+            var circle_marker_3ba706efeef9414da4cf42a079f82356 = L.circleMarker(
+                [40.86768396449915,-73.92121042203897],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_1c9ccd05e80f4866b705761025dfa01f = L.popup({maxWidth: '300'});
+
+            
+                var html_771fffe82ab140bd91edf9fc4f3617d9 = $('<div id="html_771fffe82ab140bd91edf9fc4f3617d9" style="width: 100.0%; height: 100.0%;"> Cluster 3: Manhattan-Inwood: 0.178</div>')[0];
+                popup_1c9ccd05e80f4866b705761025dfa01f.setContent(html_771fffe82ab140bd91edf9fc4f3617d9);
+            
+
+            circle_marker_3ba706efeef9414da4cf42a079f82356.bindPopup(popup_1c9ccd05e80f4866b705761025dfa01f);
+
+            
+        
+    
+            var circle_marker_d2afc797df7f4241934938e1c01a841a = L.circleMarker(
+                [40.79224946663033,-73.94418223148523],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_eba161b7fbd2480f8c2f8b8bd0cfe13a = L.popup({maxWidth: '300'});
+
+            
+                var html_fc109c932dcc42f19e07976cb9f2dece = $('<div id="html_fc109c932dcc42f19e07976cb9f2dece" style="width: 100.0%; height: 100.0%;"> Cluster 1: Manhattan-East Harlem: 0.165</div>')[0];
+                popup_eba161b7fbd2480f8c2f8b8bd0cfe13a.setContent(html_fc109c932dcc42f19e07976cb9f2dece);
+            
+
+            circle_marker_d2afc797df7f4241934938e1c01a841a.bindPopup(popup_eba161b7fbd2480f8c2f8b8bd0cfe13a);
+
+            
+        
+    
+            var circle_marker_50b3286761704c5b93bfd66277c484e9 = L.circleMarker(
+                [40.77563857330181,-73.96050763135],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_70342740c7c54502a1c53f1fa07d560f = L.popup({maxWidth: '300'});
+
+            
+                var html_87c9cf8809c544d0b5c0a7d3cffc9383 = $('<div id="html_87c9cf8809c544d0b5c0a7d3cffc9383" style="width: 100.0%; height: 100.0%;"> Cluster 1: Manhattan-Upper East Side: 0.012</div>')[0];
+                popup_70342740c7c54502a1c53f1fa07d560f.setContent(html_87c9cf8809c544d0b5c0a7d3cffc9383);
+            
+
+            circle_marker_50b3286761704c5b93bfd66277c484e9.bindPopup(popup_70342740c7c54502a1c53f1fa07d560f);
+
+            
+        
+    
+            var circle_marker_529b609c899d4bdea351cc85fd832cfe = L.circleMarker(
+                [40.77592984988488,-73.94711784471826],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_676e728fecb147d389f7dc05ec7a5478 = L.popup({maxWidth: '300'});
+
+            
+                var html_53a21ed7b1df482f8b751f4b607488ea = $('<div id="html_53a21ed7b1df482f8b751f4b607488ea" style="width: 100.0%; height: 100.0%;"> Cluster 3: Manhattan-Yorkville: 0.011</div>')[0];
+                popup_676e728fecb147d389f7dc05ec7a5478.setContent(html_53a21ed7b1df482f8b751f4b607488ea);
+            
+
+            circle_marker_529b609c899d4bdea351cc85fd832cfe.bindPopup(popup_676e728fecb147d389f7dc05ec7a5478);
+
+            
+        
+    
+            var circle_marker_cb61c27d321243cfaedf32de6059978d = L.circleMarker(
+                [40.787657998534854,-73.97705923630603],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_64e0c74cb1f1480aa333b5a42c6e92eb = L.popup({maxWidth: '300'});
+
+            
+                var html_7c46fca83f1747579b2542d5563edfe9 = $('<div id="html_7c46fca83f1747579b2542d5563edfe9" style="width: 100.0%; height: 100.0%;"> Cluster 1: Manhattan-Upper West Side: 0.033</div>')[0];
+                popup_64e0c74cb1f1480aa333b5a42c6e92eb.setContent(html_7c46fca83f1747579b2542d5563edfe9);
+            
+
+            circle_marker_cb61c27d321243cfaedf32de6059978d.bindPopup(popup_64e0c74cb1f1480aa333b5a42c6e92eb);
+
+            
+        
+    
+            var circle_marker_951ef3390db24a87a6427f776eb15866 = L.circleMarker(
+                [40.75910089146212,-73.99611936309479],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_f55ab1aa809f4b73b2655a0f2fa96d24 = L.popup({maxWidth: '300'});
+
+            
+                var html_fcd0710d9637459ab76d45f8512583ca = $('<div id="html_fcd0710d9637459ab76d45f8512583ca" style="width: 100.0%; height: 100.0%;"> Cluster 3: Manhattan-Clinton: 0.026</div>')[0];
+                popup_f55ab1aa809f4b73b2655a0f2fa96d24.setContent(html_fcd0710d9637459ab76d45f8512583ca);
+            
+
+            circle_marker_951ef3390db24a87a6427f776eb15866.bindPopup(popup_f55ab1aa809f4b73b2655a0f2fa96d24);
+
+            
+        
+    
+            var circle_marker_c8e817b5cecf4484b283c1006a128739 = L.circleMarker(
+                [40.748303077252174,-73.97833207924127],
+                {
+  "bubblingMouseEvents": true,
+  "color": "blue",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "blue",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_c82d34ad58b6481fbdefac009f852141 = L.popup({maxWidth: '300'});
+
+            
+                var html_1cdf6f37b5f84a7498a974bff21ca340 = $('<div id="html_1cdf6f37b5f84a7498a974bff21ca340" style="width: 100.0%; height: 100.0%;"> Cluster 2: Manhattan-Murray Hill: 2.034</div>')[0];
+                popup_c82d34ad58b6481fbdefac009f852141.setContent(html_1cdf6f37b5f84a7498a974bff21ca340);
+            
+
+            circle_marker_c8e817b5cecf4484b283c1006a128739.bindPopup(popup_c82d34ad58b6481fbdefac009f852141);
+
+            
+        
+    
+            var circle_marker_eaf0b531d23349b38e366ba81cbf9024 = L.circleMarker(
+                [40.727846777270244,-73.98222616506415],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_998882f2509142a9b37ea6bdc4ff8581 = L.popup({maxWidth: '300'});
+
+            
+                var html_208d6ef82d374d21a38de05d64cc0bbc = $('<div id="html_208d6ef82d374d21a38de05d64cc0bbc" style="width: 100.0%; height: 100.0%;"> Cluster 3: Manhattan-East Village: 0.077</div>')[0];
+                popup_998882f2509142a9b37ea6bdc4ff8581.setContent(html_208d6ef82d374d21a38de05d64cc0bbc);
+            
+
+            circle_marker_eaf0b531d23349b38e366ba81cbf9024.bindPopup(popup_998882f2509142a9b37ea6bdc4ff8581);
+
+            
+        
+    
+            var circle_marker_913e8d5aa1254bd1a6de3ef42aa0c63b = L.circleMarker(
+                [40.75198138007367,-73.88282109164366],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_0f2d5c5e11594cffade3a64199a932a5 = L.popup({maxWidth: '300'});
+
+            
+                var html_79ad8ddce80d4b0aa8ee5b65c3374024 = $('<div id="html_79ad8ddce80d4b0aa8ee5b65c3374024" style="width: 100.0%; height: 100.0%;"> Cluster 1: Queens-Jackson Heights: 0.018</div>')[0];
+                popup_0f2d5c5e11594cffade3a64199a932a5.setContent(html_79ad8ddce80d4b0aa8ee5b65c3374024);
+            
+
+            circle_marker_913e8d5aa1254bd1a6de3ef42aa0c63b.bindPopup(popup_0f2d5c5e11594cffade3a64199a932a5);
+
+            
+        
+    
+            var circle_marker_05686e38133b4f3b8291da2543cd4ddf = L.circleMarker(
+                [40.72526378216503,-73.84447500788983],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_34b453b645a24719a2a68c2cf1eb5c6a = L.popup({maxWidth: '300'});
+
+            
+                var html_87872314fce54c35914b0c19e29b020f = $('<div id="html_87872314fce54c35914b0c19e29b020f" style="width: 100.0%; height: 100.0%;"> Cluster 3: Queens-Forest Hills: 0.033</div>')[0];
+                popup_34b453b645a24719a2a68c2cf1eb5c6a.setContent(html_87872314fce54c35914b0c19e29b020f);
+            
+
+            circle_marker_05686e38133b4f3b8291da2543cd4ddf.bindPopup(popup_34b453b645a24719a2a68c2cf1eb5c6a);
+
+            
+        
+    
+            var circle_marker_b904e8fab42e471897c3fe700e7852ad = L.circleMarker(
+                [40.708323156138576,-73.90143517559589],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_1451eb85d73044e38d0fb769f9b2997c = L.popup({maxWidth: '300'});
+
+            
+                var html_5bc0059911994923944b2db9926c73d4 = $('<div id="html_5bc0059911994923944b2db9926c73d4" style="width: 100.0%; height: 100.0%;"> Cluster 3: Queens-Ridgewood: 0.017</div>')[0];
+                popup_1451eb85d73044e38d0fb769f9b2997c.setContent(html_5bc0059911994923944b2db9926c73d4);
+            
+
+            circle_marker_b904e8fab42e471897c3fe700e7852ad.bindPopup(popup_1451eb85d73044e38d0fb769f9b2997c);
+
+            
+        
+    
+            var circle_marker_25ae31751a0843e68bda8f778e8ce81d = L.circleMarker(
+                [40.66854957767195,-73.80986478649041],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_a9c0017e3af548b8966140cbf4f8a579 = L.popup({maxWidth: '300'});
+
+            
+                var html_7e31e1a9ed284d5c9bf433280f722c9b = $('<div id="html_7e31e1a9ed284d5c9bf433280f722c9b" style="width: 100.0%; height: 100.0%;"> Cluster 3: Queens-South Ozone Park: 0.014</div>')[0];
+                popup_a9c0017e3af548b8966140cbf4f8a579.setContent(html_7e31e1a9ed284d5c9bf433280f722c9b);
+            
+
+            circle_marker_25ae31751a0843e68bda8f778e8ce81d.bindPopup(popup_a9c0017e3af548b8966140cbf4f8a579);
+
+            
+        
+    
+            var circle_marker_21f3a3ddd45545169f1dd2c87b81308e = L.circleMarker(
+                [40.74944079974332,-73.71548118999145],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_298133e5e0734766828ec12ac53d6736 = L.popup({maxWidth: '300'});
+
+            
+                var html_1509dff4431f40d890cea038a9b5608b = $('<div id="html_1509dff4431f40d890cea038a9b5608b" style="width: 100.0%; height: 100.0%;"> Cluster 3: Queens-Glen Oaks: 0.027</div>')[0];
+                popup_298133e5e0734766828ec12ac53d6736.setContent(html_1509dff4431f40d890cea038a9b5608b);
+            
+
+            circle_marker_21f3a3ddd45545169f1dd2c87b81308e.bindPopup(popup_298133e5e0734766828ec12ac53d6736);
+
+            
+        
+    
+            var circle_marker_32de3ed1383740858e57e45448ff1f75 = L.circleMarker(
+                [40.71093547252271,-73.81174822458634],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_67de5e32c2d44825914a0c08f2d8a454 = L.popup({maxWidth: '300'});
+
+            
+                var html_b2de05161fa24e17b162c92cc24fdd44 = $('<div id="html_b2de05161fa24e17b162c92cc24fdd44" style="width: 100.0%; height: 100.0%;"> Cluster 3: Queens-Briarwood: 0.045</div>')[0];
+                popup_67de5e32c2d44825914a0c08f2d8a454.setContent(html_b2de05161fa24e17b162c92cc24fdd44);
+            
+
+            circle_marker_32de3ed1383740858e57e45448ff1f75.bindPopup(popup_67de5e32c2d44825914a0c08f2d8a454);
+
+            
+        
+    
+            var circle_marker_1a08ea2c1bd94b5486f8f5c1f1edbcac = L.circleMarker(
+                [40.603134432500894,-73.75497968043872],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_eea586e8f3fb4fd8b3181a0bb519446a = L.popup({maxWidth: '300'});
+
+            
+                var html_37cb3429dd944975b1789ae1c7a4e663 = $('<div id="html_37cb3429dd944975b1789ae1c7a4e663" style="width: 100.0%; height: 100.0%;"> Cluster 3: Queens-Far Rockaway: 0.013</div>')[0];
+                popup_eea586e8f3fb4fd8b3181a0bb519446a.setContent(html_37cb3429dd944975b1789ae1c7a4e663);
+            
+
+            circle_marker_1a08ea2c1bd94b5486f8f5c1f1edbcac.bindPopup(popup_eea586e8f3fb4fd8b3181a0bb519446a);
+
+            
+        
+    
+            var circle_marker_5816bc5520a14ca9ad4122afa908318c = L.circleMarker(
+                [40.626927625381754,-74.07790192660066],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_db3c458ad61f432780156b7831ddf8d6 = L.popup({maxWidth: '300'});
+
+            
+                var html_8c5ac7d2cc6f41c4b79504a2a9b7b042 = $('<div id="html_8c5ac7d2cc6f41c4b79504a2a9b7b042" style="width: 100.0%; height: 100.0%;"> Cluster 0: Staten Island-Stapleton: 0.43</div>')[0];
+                popup_db3c458ad61f432780156b7831ddf8d6.setContent(html_8c5ac7d2cc6f41c4b79504a2a9b7b042);
+            
+
+            circle_marker_5816bc5520a14ca9ad4122afa908318c.bindPopup(popup_db3c458ad61f432780156b7831ddf8d6);
+
+            
+        
+    
+            var circle_marker_c2a421a423a4414b930f6587a13da969 = L.circleMarker(
+                [40.631878926546065,-74.1071817826561],
+                {
+  "bubblingMouseEvents": true,
+  "color": "purple",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "purple",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_a617f82c5e6e4f61a894c49d13e94561 = L.popup({maxWidth: '300'});
+
+            
+                var html_990fd744122449f0aee10e42ce1a2c8c = $('<div id="html_990fd744122449f0aee10e42ce1a2c8c" style="width: 100.0%; height: 100.0%;"> Cluster 3: Staten Island-West Brighton: 0.1</div>')[0];
+                popup_a617f82c5e6e4f61a894c49d13e94561.setContent(html_990fd744122449f0aee10e42ce1a2c8c);
+            
+
+            circle_marker_c2a421a423a4414b930f6587a13da969.bindPopup(popup_a617f82c5e6e4f61a894c49d13e94561);
+
+            
+        
+    
+            var circle_marker_b23e5456ef20421aa5679c39d449c470 = L.circleMarker(
+                [40.58024741350957,-74.0795529253982],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_835b57d049854c76913441b61a92c100 = L.popup({maxWidth: '300'});
+
+            
+                var html_db2709e35dbc4162ac51769125fcda5e = $('<div id="html_db2709e35dbc4162ac51769125fcda5e" style="width: 100.0%; height: 100.0%;"> Cluster 0: Staten Island-South Beach: 0.536</div>')[0];
+                popup_835b57d049854c76913441b61a92c100.setContent(html_db2709e35dbc4162ac51769125fcda5e);
+            
+
+            circle_marker_b23e5456ef20421aa5679c39d449c470.bindPopup(popup_835b57d049854c76913441b61a92c100);
+
+            
+        
+    
+            var circle_marker_409eddde0b85441289aebe9e4d8607a4 = L.circleMarker(
+                [40.752042369507215,-73.96770824581834],
+                {
+  "bubblingMouseEvents": true,
+  "color": "red",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "red",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_961450203ef2491a80975714523cbfa2 = L.popup({maxWidth: '300'});
+
+            
+                var html_94fe9c69ed7e42cbbfd3ffe89f8ce43d = $('<div id="html_94fe9c69ed7e42cbbfd3ffe89f8ce43d" style="width: 100.0%; height: 100.0%;"> Cluster 0: Manhattan-Turtle Bay: 0.43</div>')[0];
+                popup_961450203ef2491a80975714523cbfa2.setContent(html_94fe9c69ed7e42cbbfd3ffe89f8ce43d);
+            
+
+            circle_marker_409eddde0b85441289aebe9e4d8607a4.bindPopup(popup_961450203ef2491a80975714523cbfa2);
+
+            
+        
+    
+            var circle_marker_f4a44923e08f4be0bb4091edd607dbc8 = L.circleMarker(
+                [40.64692606658579,-73.94817709920184],
+                {
+  "bubblingMouseEvents": true,
+  "color": "green",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "green",
+  "fillOpacity": 0.7,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 10,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_470386c478b6407b8c39aa529a958985);
+            
+    
+            var popup_22e889eef8914ede980a62c88f1dc85f = L.popup({maxWidth: '300'});
+
+            
+                var html_b45fb4cda61446a8b345f3fdb00562a5 = $('<div id="html_b45fb4cda61446a8b345f3fdb00562a5" style="width: 100.0%; height: 100.0%;"> Cluster 1: Brooklyn-Erasmus: 0.027</div>')[0];
+                popup_22e889eef8914ede980a62c88f1dc85f.setContent(html_b45fb4cda61446a8b345f3fdb00562a5);
+            
+
+            circle_marker_f4a44923e08f4be0bb4091edd607dbc8.bindPopup(popup_22e889eef8914ede980a62c88f1dc85f);
+
+            
+        
+</script>
