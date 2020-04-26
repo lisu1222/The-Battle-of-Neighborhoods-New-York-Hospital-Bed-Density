@@ -53,6 +53,7 @@ I dowloaded json file from [New York City Neighborhoods Names](https://geo.nyu.e
 ### 3. Fetching NYC Population per Neighborhood from Wikipedia using [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
 The [Neighborhoods in New York City]("https://en.wikipedia.org/wiki/Neighborhoods_in_New_York_City") page from [Wikipedia]("https://en.wikipedia.org") has a list of neighborhoods names and each name contains a anchor tag connecting to its own Wikipedia page, where populatiion data on the right hand side table can be found.      
+
 I use [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to fetch each neighborhood name from Wikepedia, and run iteration via requests to visit each page of the neighborhood, and scrap its population data. The dataframe fetched include Neighborhood name, its Anchor tag and Population:
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/4.png)        
@@ -78,7 +79,7 @@ The cleaned dataframe looks like this:
      
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/2.png)      
 
-After that we move to combine hospital beds data we collected in step 1 and hospital data per neighborhood collected in this step by matching hospital names using string matching package [FuzzyWuzzy](https://pypi.org/project/fuzzywuzzy/). The combined dataframe looks like this:     
+After that we move to combine hospital beds data we collected in step 1 and hospital data per neighborhood collected in this step by matching hospital names using string matching package [FuzzyWuzzy](https://pypi.org/project/fuzzywuzzy/). The combined dataframe looks like this:        
 
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/6.png)
@@ -90,13 +91,13 @@ Now we have dataframe like this:
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/7.png)
 
 Here is a bar chart of Total Beds per Borough:      
-![]((https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Total%20Beds%20per%20Borough.png)     
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Total%20Beds%20per%20Borough.png)     
 
 Here is a bar chart of Intensive Care Beds per Borough:
-![]((https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Intensive%20Care%20Beds%20per%20Borough.png) 
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Intensive%20Care%20Beds%20per%20Borough.png) 
 
 Here is a bar chart of Medical/ Surgical Beds per Borough:
-![]((https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Medical%20Beds%20per%20Borough.png)
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Medical%20Beds%20per%20Borough.png)
 
 
 ### 6. Integrating Population per Neighborhood and Beds per Neighborhood    
