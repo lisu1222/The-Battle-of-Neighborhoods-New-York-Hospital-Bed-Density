@@ -32,6 +32,49 @@ def get_nyc_neighborhoods():
     return neighborhoods
 
 
+def get_neighborhood_pop():
+	wiki_link = "https://en.wikipedia.org/wiki/Neighborhoods_in_New_York_City"
+	page = requests.get(wiki_link)
+	soup = BeautifulSoup(page.text, 'html.parser')
+
+	neighborhood_pop_df = pd.DataFrame(columns = ['Neighborhood','Anchor'])
+    
+    neighborhood_list = []
+    neighborhood_anchor = []
+    for i in range(1,60):
+        for element in soup.select("table.wikitable tr")[i].findAll('a')[1:]:
+            neighborhood_list.append(element.text)
+            neighborhood_anchor.append(element['href'])
+            
+    neighborhood_pop_df['Neighborhood'] = neighborhood_list
+    neighborhood_pop_df['Anchor'] = neighborhood_anchor
+    neighborhood_pop_df['Population'] = np.zeros(len(neighborhood_list))
+
+    
+    wiki_search = "https://en.wikipedia.org"
+
+    for i, anchor in enumerate(neighborhood_pop_df['Anchor']):
+        neighborhood_page = requests.get(wiki_search+anchor)
+        soup2 = BeautifulSoup(neighborhood_page.text, 'html.parser')
+        table = soup2.select("table.infobox tr")
+    
+        for j in range(len(table)):
+            try:
+                if 'Population' in table[j].find('th').text: 
+                    neighborhood_pop_df['Population'][i] = int(table[j+1].find('td').text.replace(',', ''))
+            except:
+                pass 
+    
+    neighborhood_pop_df = neighborhood_pop_df[neighborhood_pop_df['Population'] != 0]
+    neighborhood_pop_df.to_csv('neighborhood_pop.csv', index = False)
+    
+    return neighborhood_pop_df
+
+
+def combine_borough_neighborhood_population():
+	new_york_data = neighborhoods.merge(neighborhood_pop_df, on = 'Neighborhood', how = 'inner').drop('Anchor', axis =1)
+	return new_york_data
+
 def get_hospital_beds():
 	ROOT_URL = "https://profiles.health.ny.gov/hospital/view/{}"
 	NYM_NYC = [
