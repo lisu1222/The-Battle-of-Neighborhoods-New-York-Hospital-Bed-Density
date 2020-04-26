@@ -109,7 +109,58 @@ We then joio two tables on neighborhood and borough and get:
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/8.png)
 
-By calculating a ratio of beds per 100 people, we can compare each neighborhood's medical care capability. For this purpose, we add two new columns: Intensive Care Bed Per Hundred People and Bed Per Hundred People. The dataframe looks like this:
+Since we need to compare each neighborhood's medical care capability with a ratio metric instead of the total number of beds. For this purpose, we add two new columns: Intensive Care Bed Per Hundred People and Bed Per Hundred People. The dataframe looks like this:    
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/9.png)
+
+
+Here is a bar plot of Total Beds per Hundred per Borough:     
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Total%20Beds%20per%20Hundred%20per%20Borough.png)
+
+
+Here is a bar plot of Intensive Care Beds per Hundred per Borough:   
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Intensive%20Care%20Beds%20per%20Hundred%20per%20Borough.png)
+
+
+### 7. Neighborhood Clustering Analysis
+
+We will use K-means to cluster NYC neighborhoods on their hospital beds per hundred people. 
+
+First we select features for clustering: Population, Intensive Care Bed Per Hundred People and Bed Per Hundred People.    
+We then normalize the data since K-Means algorithem requires standarlized dataset to calculate distances.     
+
+Then we use elbow method to find the optimum number of clusters and the output optimum number of k is 4.    
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/10.png)
+
+**Examine Clusters** 
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/cluster1.png)    
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/cluster2.png)   
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/cluster3.png)   
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/cluster4.png)     
+
+
+** Visulize Geo Clusters **   
+
+We use geopy library to get the latitude and longitude values of New York City, and create a NYC map using [folium](https://python-visualization.github.io/folium/).      
+Total Beds per Hundred People:       
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/map1.png)
+
+Intensive Care Beds per Hundred People:
+
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/map2.png)
+
+
+
+
 
 
 
