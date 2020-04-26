@@ -23,17 +23,73 @@ Hospital Bed Density provides the number of hospital beds per 1,000 people; It s
 
 This project will include the following steps:
     
-- Collect and clean New York Hospital Data
+- Collect and clean New York Hospital Data 
 - Collect and clean New York Neighborhood Data
 - Collect and clean New York Population Data
-- Integrate datasets on interest of study
+- Collect Hospital Latitude and Longitude Data
+- Data Integration 
 - Statistical Analysis and Visulization
-- K-Means Neighborhood Clustering Analysis on Hospital Beds Density 
+- K-Means Neighborhood Clustering Analysis on Hospital Bed Density 
 - Visulize the Neighborhood Clusters 
 - Analyze Results
 
 
 ## Method
+ 
+1. **Web Scrapping with Selenium**    
+
+[Selenium](https://www.selenium.dev/) is a framework which is designed to automate test for web applications. It can be used to control the browser interactions automatically such as link clicks and form submissions.       
+
+In our case of collecting NYC Hospital Data ([hospital_beds.csv](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/hospital_beds.csv)), we need a click on the target webpage to upfold the 'Bed Types' table for fetching, selenuium is suitable in this scenario. The cleaned dataframe looks like this:         
+       
+[](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/1.png)       
+             
+
+2. **Fetching Hospital Latitude and Longitude using [Foursquare](https://foursquare.com/) API**    
+
+Since we will combine hospital data with NYC neighborhood data later, we need to have each hospital's latitude and longitude information using Foursquare API. The cleaned dataframe looks like this:         
+     
+[](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/2.png)
+
+3. **Fetching NYC Neighborhood Data using [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)**   
+
+I dowloaded json file from [New York City Neighborhoods Names](https://geo.nyu.edu/catalog/nyu_2451_34572). It contains four fileds: NYC Borough, Neighborhood, Latitude and Longitude. The cleaned dataframe looks like this:         
+
+[](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/3.png)
+
+4. **Fetching NYC Population per Neighborhood from Wikipedia using [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)**     
+The [Neighborhoods in New York City]("https://en.wikipedia.org/wiki/Neighborhoods_in_New_York_City") page from [Wikipedia]("https://en.wikipedia.org") has a list of neighborhoods names and each name contains a anchor tag connecting to its own Wikipedia page, where populatiion data on the right hand side table can be found.      
+I use [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to fetch each neighborhood name from Wikepedia, and run iteration via requests to visit each page of the neighborhood, and scrap its population data. The dataframe fetched include Neighborhood name, its Anchor tag and Population:
+
+[](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/4.png)        
+
+
+5. **Combine NYC Neighborhood Data and Population Data**    
+Merge NYC neighborhood data wiith population data and get:      
+[](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/5.png)   
+
+Here is a box chart of Neighborhood per Borough:    
+[](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Neighborhood%20per%20Borough.png)
+
+Here is a box chart of Population per Borough:
+[](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Population%20per%20Borough.png)
+
+6. ** Hospital Data
+
+
+
+
+
+
+
+
+
+3. Statistical Analysis and Visulization
+
+
+
+
+
 
 ## Result and Discussion
 
