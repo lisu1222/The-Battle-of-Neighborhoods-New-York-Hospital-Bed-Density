@@ -90,13 +90,16 @@ Now we have dataframe like this:
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/7.png)
 
-Here is a bar chart of Total Beds per Borough:      
+Here is a bar chart of Total Beds per Borough: 
+
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Total%20Beds%20per%20Borough.png)     
 
-Here is a bar chart of Intensive Care Beds per Borough:
-![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Intensive%20Care%20Beds%20per%20Borough.png) 
+Here is a bar chart of Intensive Care Beds per Borough:  
 
-Here is a bar chart of Medical/ Surgical Beds per Borough:
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Intensive%20Care%20Beds%20per%20Borough.png)
+
+Here is a bar chart of Medical/ Surgical Beds per Borough:  
+
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Medical%20Beds%20per%20Borough.png)
 
 
