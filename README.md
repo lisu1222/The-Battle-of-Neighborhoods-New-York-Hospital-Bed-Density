@@ -99,7 +99,14 @@ Here is a bar chart of Medical/ Surgical Beds per Borough:
 ![]((https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/Medical%20Beds%20per%20Borough.png)
 
 
-### 7. Hospital Data
+### 6. Integrating Population per Neighborhood and Beds per Neighborhood    
+
+We then joio two tables on neighborhood and borough and get:         
+
+![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/8.png)
+
+By calculating a ratio of beds per 100 people, we can compare each neighborhood's medical care capability. For this purpose, we add two new columns: Intensive Care Bed Per Hundred People and Bed Per Hundred People. The dataframe looks like this:
+
 
 
 
