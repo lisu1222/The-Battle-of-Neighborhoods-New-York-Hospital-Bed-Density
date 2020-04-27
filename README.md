@@ -146,7 +146,7 @@ Then we use elbow method to find the optimum number of clusters and the output o
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/cluster4.png)     
 
 
-** Visulize Geo Clusters **   
+**Visulize Geo Clusters**   
 
 We use geopy library to get the latitude and longitude values of New York City, and create a NYC map using [folium](https://python-visualization.github.io/folium/).      
 Total Beds per Hundred People:       
@@ -162,7 +162,8 @@ Intensive Care Beds per Hundred People:
 
 ## Result and Discussion
 
-Looking into the results of our neighborhoods clusters, we find that cluster 3 only includes one neighborhood: Murray Hill of Manhattan. It has the most sufficient beds, making it the most 
+Looking into the results of our neighborhoods clusters, we find that cluster 3 only includes one neighborhood: Murray Hill of Manhattan. It has the sufficient beds number and bed density that is extramely higher than other neighborhoods, making it the most equipped neighborhood to fight pandemic.   
+Cluster 1 which contains 7 neighborhoods ranks as the second highest in inpatient availability. And the neighborhoods in cluster 2 shold be paid more attention as they have the most shortage of beds/intensive care beds for their residents. People who live in these neighborhoods are at the high risk of not being able to receive medical care during pandemic.    
 
 **Limitations**
 
@@ -175,3 +176,7 @@ Looking into the results of our neighborhoods clusters, we find that cluster 3 o
 - It would be more insightful to include NYC COVID-19 data in our project, if we can get the data about confirmed cases and death numbers of each neighborhoods of New York City.
 
 ## Conclusion
+
+This project collected various sources of data, cleaned, tranformed and combined these datasets to get helpful insights on the inpatient availability of neighborhoods in New York City. NYC neighborhoods were then grouped into 4 clusters based on their similarities on population, hospital beds per hundred people to indicate their ability in combating pandemics. 
+
+
