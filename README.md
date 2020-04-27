@@ -40,7 +40,7 @@ This project will include the following steps:
 
 [Selenium](https://www.selenium.dev/) is a framework which is designed to automate test for web applications. It can be used to control the browser interactions automatically such as link clicks and form submissions.       
 
-In our case of collecting NYC Hospital Data ([hospital_beds.csv](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/hospital_beds.csv)), we need a click on the target webpage to upfold the 'Bed Types' table for fetching, selenuium is suitable in this scenario. The cleaned dataframe looks like this:         
+In our case of collecting NYC Hospital Beds Data ([hospital_beds.csv](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/hospital_beds.csv)), we need a click on the target webpage to upfold the 'Bed Types' table for fetching, selenuium is suitable in this scenario. The cleaned dataframe looks like this:         
        
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/1.png)       
   
@@ -160,24 +160,18 @@ Intensive Care Beds per Hundred People:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-3. Statistical Analysis and Visulization
-
-
-
-
-
-
 ## Result and Discussion
+
+Looking into the results of our neighborhoods clusters, we find that cluster 3 only includes one neighborhood: Murray Hill of Manhattan. It has the most sufficient beds, making it the most 
+
+**Limitations**
+
+- We only looked into neighborhoods that have hospital data. However, we should also analyze neighborhood that does not have hospitals. And this group of neighborhoods can be considered an additional cluster of NYC neighborhoods.
+
+- The hospital beds data we collected from New York State [Department of Health](https://profiles.health.ny.gov/hospital) may not include the latest information. 
+
+- The NYC population data we collected from Wikipedia pages are from 2010, that is not very accurate.
+
+- It would be more insightful to include NYC COVID-19 data in our project, if we can get the data about confirmed cases and death numbers of each neighborhoods of New York City.
 
 ## Conclusion
