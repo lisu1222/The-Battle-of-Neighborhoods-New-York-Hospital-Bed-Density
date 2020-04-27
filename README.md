@@ -3,7 +3,7 @@
 ## Project Motivation        
 
 Are the hospitals near me ready for Coronavirus?              
-Until April 25th, the confirmed COVID-19 cases in New York City have reached 150,000 and the confirmed deaths 10,961. New York City State now has more COVID-19 cases than any single coutry outside the US, according to latest figures.      
+Until April 25th, the confirmed COVID-19 cases in New York City have reached 150,000 and the confirmed deaths 10,961. New York City State now has more COVID-19 cases than any single country outside the US, according to latest figures.      
 
 This project was motivated by the current national battle to beat pandemic. It aims to analyze the hospital bed density for each neighborhood in the five boroughs of New York City.     
 Hospital Bed Density provides the number of hospital beds per 1,000 people; It serves as a general measure of inpatient service availability, especially in  the battles to beat pandemic. Hospital beds include inpatient beds available in public, private, general, and specialized hospitals and rehabilitatiion centers. Because the level of inpatient services required depends on several factors - such as demographic issues and the burden of disease - there is no global target for the number of hospital beds percountry. In United States, the hospital bed density is measured as 2.9 beds per 1,000 people.        
@@ -28,9 +28,9 @@ This project will include the following steps:
 - Collect and clean New York Population Data
 - Collect Hospital Latitude and Longitude Data
 - Data Integration 
-- Statistical Analysis and Visulization
+- Statistical Analysis and Visualization
 - K-Means Neighborhood Clustering Analysis on Hospital Bed Density 
-- Visulize the Neighborhood Clusters 
+- Visualize the Neighborhood Clusters 
 - Analyze Results
 
 
@@ -40,27 +40,27 @@ This project will include the following steps:
 
 [Selenium](https://www.selenium.dev/) is a framework which is designed to automate test for web applications. It can be used to control the browser interactions automatically such as link clicks and form submissions.       
 
-In our case of collecting NYC Hospital Beds Data ([hospital_beds.csv](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/hospital_beds.csv)), we need a click on the target webpage to upfold the 'Bed Types' table for fetching, selenuium is suitable in this scenario. The cleaned dataframe looks like this:         
+In our case of collecting NYC Hospital Beds Data ([hospital_beds.csv](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/hospital_beds.csv)), we need a click on the target webpage to unfold the 'Bed Types' table for fetching, selenium is suitable in this scenario. The cleaned DataFrame looks like this:         
        
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/1.png)       
   
 ### 2. Fetching NYC Neighborhood Data using [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)   
 
-I dowloaded json file from [New York City Neighborhoods Names](https://geo.nyu.edu/catalog/nyu_2451_34572). It contains four fileds: NYC Borough, Neighborhood, Latitude and Longitude. The cleaned dataframe looks like this:         
+I dowloaded json file from [New York City Neighborhoods Names](https://geo.nyu.edu/catalog/nyu_2451_34572). It contains four fields: NYC Borough, Neighborhood, Latitude and Longitude. The cleaned DataFrame looks like this:         
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/3.png)
 
 ### 3. Fetching NYC Population per Neighborhood from Wikipedia using [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/)
 
-The [Neighborhoods in New York City]("https://en.wikipedia.org/wiki/Neighborhoods_in_New_York_City") page from [Wikipedia]("https://en.wikipedia.org") has a list of neighborhoods names and each name contains a anchor tag connecting to its own Wikipedia page, where populatiion data on the right hand side table can be found.      
+The [Neighborhoods in New York City]("https://en.wikipedia.org/wiki/Neighborhoods_in_New_York_City") page from [Wikipedia]("https://en.wikipedia.org") has a list of neighborhoods names and each name contains a anchor tag connecting to its own Wikipedia page, where population data on the right hand side table can be found.      
 
-I use [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to fetch each neighborhood name from Wikepedia, and run iteration via requests to visit each page of the neighborhood, and scrap its population data. The dataframe fetched include Neighborhood name, its Anchor tag and Population:
+I use [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/) to fetch each neighborhood name from Wikipedia, and run iteration via requests to visit each page of the neighborhood, and scrap its population data. The DataFrame fetched includes Neighborhood name, its Anchor tag and Population:
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/4.png)        
 
 
 ### 4. Combine NYC Neighborhood Data and Population Data    
-Merge NYC neighborhood data wiith population data and get:      
+Merge NYC neighborhood data with population data and get:      
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/5.png)   
 
 Here is a box chart of Neighborhood per Borough:    
@@ -79,7 +79,9 @@ The cleaned dataframe looks like this:
      
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/2.png)      
 
-After that we move to combine hospital beds data we collected in step 1 and hospital data per neighborhood collected in this step by matching hospital names using string matching package [FuzzyWuzzy](https://pypi.org/project/fuzzywuzzy/). The combined dataframe looks like this:        
+After that we move to combine hospital beds data we collected in step 1 and hospital data per neighborhood collected in this step by matching hospital names using string matching package [FuzzyWuzzy](https://pypi.org/project/fuzzywuzzy/). 
+
+The combined DataFrame looks like this:        
 
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/6.png)
@@ -105,11 +107,13 @@ Here is a bar chart of Medical/ Surgical Beds per Borough:
 
 ### 6. Integrating Population per Neighborhood and Beds per Neighborhood    
 
-We then joio two tables on neighborhood and borough and get:         
+We then join the two tables on neighborhood and borough and get:         
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/8.png)
 
-Since we need to compare each neighborhood's medical care capability with a ratio metric instead of the total number of beds. For this purpose, we add two new columns: Intensive Care Bed Per Hundred People and Bed Per Hundred People. The dataframe looks like this:    
+Since we need to compare each neighborhood's medical care capability with a ratio metric instead of the total number of beds. For this purpose, we add two new columns: Intensive Care Bed Per Hundred People and Bed Per Hundred People. 
+
+The DataFrame looks like this:    
 
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/9.png)
 
@@ -129,7 +133,7 @@ Here is a bar plot of Intensive Care Beds per Hundred per Borough:
 We will use K-means to cluster NYC neighborhoods on their hospital beds per hundred people. 
 
 First we select features for clustering: Population, Intensive Care Bed Per Hundred People and Bed Per Hundred People.    
-We then normalize the data since K-Means algorithem requires standarlized dataset to calculate distances.     
+We then normalize the data since K-Means algorithm requires standardized dataset to calculate distances.     
 
 Then we use elbow method to find the optimum number of clusters and the output optimum number of k is 4.    
 
@@ -146,7 +150,7 @@ Then we use elbow method to find the optimum number of clusters and the output o
 ![](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/image_output/cluster4.png)     
 
 
-**Visulize Geo Clusters**   
+**Visualize Geo Clusters**   
 
 We use geopy library to get the latitude and longitude values of New York City, and create a NYC map using [folium](https://python-visualization.github.io/folium/).      
 Total Beds per Hundred People:       
@@ -162,8 +166,8 @@ Intensive Care Beds per Hundred People:
 
 ## Result and Discussion
 
-Looking into the results of our neighborhoods clusters, we find that cluster 3 only includes one neighborhood: Murray Hill of Manhattan. It has the sufficient beds number and bed density that is extramely higher than other neighborhoods, making it the most equipped neighborhood to fight pandemic.   
-Cluster 1 which contains 7 neighborhoods ranks as the second highest in inpatient availability. And the neighborhoods in cluster 2 shold be paid more attention as they have the most shortage of beds/intensive care beds for their residents. People who live in these neighborhoods are at the high risk of not being able to receive medical care during pandemic.    
+Looking into the results of our neighborhoods clusters, we find that cluster 3 only includes one neighborhood: Murray Hill of Manhattan. It has the sufficient beds number and bed density that is extremely higher than other neighborhoods, making it the most equipped neighborhood to fight pandemic.   
+Cluster 1 which contains 7 neighborhoods ranks as the second highest in inpatient availability. And the neighborhoods in cluster 2 should be paid more attention as they have the most shortage of beds/intensive care beds for their residents. People who live in these neighborhoods are at the high risk of not being able to receive medical care during pandemic.    
 
 **Limitations**
 
@@ -177,6 +181,6 @@ Cluster 1 which contains 7 neighborhoods ranks as the second highest in inpatien
 
 ## Conclusion
 
-This project collected various sources of data, cleaned, tranformed and combined these datasets to get helpful insights on the inpatient availability of neighborhoods in New York City. NYC neighborhoods were then grouped into 4 clusters based on their similarities on population, hospital beds per hundred people to indicate their ability in combating pandemics. 
+This project collected various sources of data, cleaned, transformed and combined these datasets to get helpful insights on the inpatient availability of neighborhoods in New York City. NYC neighborhoods were then grouped into 4 clusters based on their similarities on population, hospital beds per hundred people to indicate their ability in combating pandemics. 
 
 
