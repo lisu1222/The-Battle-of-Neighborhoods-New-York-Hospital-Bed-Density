@@ -14,9 +14,9 @@ Hospital Bed Density provides the number of hospital beds per 1,000 people; It s
 1. NYC Hospital Data ([hospital_beds.csv](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/hospital_beds.csv)) was scrapped from New York State [Department of Health](https://profiles.health.ny.gov/hospital). It contains hospital name, bed type and the corresponding bed numbers in each type. 76 hospitals data in NYC are collected.
 
 
-2. [NYC Neiborhood Data](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/newyork_data.json)) is a json file dowloaded from [New York City Neighborhoods Names](https://geo.nyu.edu/catalog/nyu_2451_34572). After cleaning and transorming, it includes latitude and longitude for each neighborhood of the 5 boroughs in NYC.
+2. [NYC Neighborhood Data](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/newyork_data.json)) is a json file dowloaded from [New York City Neighborhoods Names](https://geo.nyu.edu/catalog/nyu_2451_34572). After cleaning and transforming, it includes latitude and longitude for each neighborhood of the 5 boroughs in NYC.
 
-3. [NYC Population Data](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/new_york_data.csv) includes population data per neighborhood that were scrapped from Wikipedia, and then integrated with [New York Neiborhood Data](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/newyork_data.json)). It has 5 fileds: Borough, Neighborhood, Population, Longitude and Latitude.
+3. [NYC Population Data](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/data_output/new_york_data.csv) includes population data per neighborhood that were scrapped from Wikipedia, and then integrated with [New York Neiborhood Data](https://github.com/lisu1222/The-Battle-of-Neighborhoods-New-York-Hospital-Density/blob/master/newyork_data.json)). It has 5 fields: Borough, Neighborhood, Population, Longitude and Latitude.
 
 
 ## Project Plan
